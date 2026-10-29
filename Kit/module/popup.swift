@@ -109,7 +109,7 @@ public class PopupWindow: NSPanel, NSWindowDelegate {
         self.titlebarAppearsTransparent = true
         self.animationBehavior = .none
         self.hidesOnDeactivate = false
-        self.collectionBehavior = .moveToActiveSpace
+        self.collectionBehavior = [.moveToActiveSpace, .fullScreenAuxiliary]
         self.backgroundColor = .clear
         self.hasShadow = true
         self.setIsVisible(false)
